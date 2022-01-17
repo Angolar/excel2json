@@ -168,7 +168,7 @@ namespace excel2json.GUI
         /// </summary>
         private void btnHelp_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://neil3d.github.io/coding/excel2json.html");
+            System.Diagnostics.Process.Start("https://github.com/Angolar/excel2json");
         }
 
         /// <summary>
@@ -347,6 +347,11 @@ namespace excel2json.GUI
         private void btnSaveCSharp_Click(object sender, EventArgs e)
         {
             saveToFile(2, "C# code file(*.cs)|*.cs");
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/neil3d/excel2json");
         }
     }
 }

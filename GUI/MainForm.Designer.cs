@@ -63,6 +63,7 @@
             this.tabPageJSON = new System.Windows.Forms.TabPage();
             this.tabCSharp = new System.Windows.Forms.TabPage();
             this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             label2 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
@@ -160,11 +161,12 @@
             // 
             // statusLabel
             // 
+            this.statusLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold);
             this.statusLabel.IsLink = true;
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.statusLabel.Size = new System.Drawing.Size(139, 17);
-            this.statusLabel.Text = "https://neil3d.github.io";
+            this.statusLabel.Size = new System.Drawing.Size(161, 17);
+            this.statusLabel.Text = "https://angolar.github.io";
             this.statusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.statusLabel.Click += new System.EventHandler(this.statusLabel_Click);
             // 
@@ -522,11 +524,23 @@
             this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
             this.backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_RunWorkerCompleted);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(580, 547);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(95, 12);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Power By neil3d";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 562);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.statusStrip);
@@ -557,7 +571,6 @@
 
         #endregion
         private System.Windows.Forms.StatusStrip statusStrip;
-        private System.Windows.Forms.ToolStripStatusLabel statusLabel;
         private System.Windows.Forms.ToolStrip toolStrip;
         private System.Windows.Forms.ToolStripButton btnImportExcel;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
@@ -588,5 +601,7 @@
         private System.Windows.Forms.TextBox textBoxExculdePrefix;
         private System.Windows.Forms.CheckBox checkBoxCellJson;
         private System.Windows.Forms.CheckBox checkBoxAllString;
+        private System.Windows.Forms.ToolStripStatusLabel statusLabel;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
