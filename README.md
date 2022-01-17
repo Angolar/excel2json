@@ -1,4 +1,5 @@
 # excel2json
+# [Power by neil3d](https://github.com/neil3d/excel2json)
 
 详细帮助文档请见：[https://github.com/Angolar/excel2json](https://github.com/Angolar/excel2json)
 
